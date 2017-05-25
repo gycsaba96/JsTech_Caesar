@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caesar Secret</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+</head>
+<body>
+  <div ng-app="caesarApp" ng-controller="caesarCtrl">
+    <h1>Caesar Secrets</h1>
+    <nav>
+      <ul>
+        <li><a href="#/">New secret</a></li>
+        <li><a href="#coding">Go coding</a></li>
+      </ul>
+    </nav>
+    <div ng-view></div>
+  </div>
+
+  <script src="caesarApp.js"></script>
+  <script src="caesarCtrl.js"></script>
+
+</body>
+</html>

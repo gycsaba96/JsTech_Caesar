@@ -1,0 +1,19 @@
+<p>You can coding here. Your secret is "{{data.secret}}".</p>
+
+<div id="encoder">
+  <h2>Encoding</h2>
+  <textarea ng-model="stringToEncode" width="500px"></textarea>
+  <div>
+    <p>Encoded text:</p>
+    <pre>{{ stringToEncode | uppercase | caesarEncode }}</pre>
+  </div>
+</div>
+
+<div id="decoder">
+  <h2>Decoding</h2>
+  <textarea ng-model="stringToDecode"> </textarea>
+  <div>
+    <p>Decoded text:</p>
+    <pre>{{ stringToDecode | uppercase | caesarDecode }}</pre>
+  </div>
+</div>
